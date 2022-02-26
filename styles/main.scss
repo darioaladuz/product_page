@@ -1,0 +1,16 @@
+@import '_variables', 'header', 'product/product', 'product/product-details', 'product/product-form', 'cart/cart';
+
+/* reset default browser styles */
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    list-style: none;
+    text-decoration: none;
+    font-family: 'Kumbh Sans', sans-serif;
+}
+
+body {
+    min-height: 100vh;
+}

@@ -1,0 +1,25 @@
+#header--main {
+    @include flex-row-align;
+    justify-content: space-between;
+    height: 8vh;
+    padding: 16px;
+    box-shadow: 0 8px 12px rgba(0,0,0,.15);
+    z-index: 10;
+
+    #logo {
+        color: $black;
+    }
+
+    section {
+        @include flex-row-align;
+        gap: 16px;
+    }
+
+    #img--profile {
+        width: 40px;
+    }
+}
+
+.img--product {
+    width: 100%;
+}

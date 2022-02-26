@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Product Page</title>
+    <link rel="stylesheet" href="styles/main.css">
+</head>
+<body>
+    <header id="header--main">
+        <section class="header--left">
+            <img src="./assets/images/icon-menu.svg" class="icon icon__header icon--menu">
+            <h1 id="logo">sneakers</h1>
+        </section>
+        <section class="header--right">
+            <img src="./assets/images/icon-cart.svg" class="icon icon__header icon--cart">
+            <img src="./assets/images/image-avatar.png" alt="" id="img--profile">
+        </section>
+    </header>
+
+    <section id="cart">
+        <h3 id="cart__title">Cart</h3>
+    
+        <section id="cart__content">
+            <p id="cart__content__empty">Your cart is empty.</p>
+        </section>
+    </section>
+
+    <main id="product">
+        <section class="product__display">
+            <img src="./assets/images/image-product-1.jpg" class="img--product" alt="">
+        </section>
+
+        <section class="product__info">
+            <article class="product__details">
+                <span class="product__company">
+                    SNEAKER COMPANY
+                </span>
+                <h2 class="product__name">fall limited edition sneakers</h2>
+                <p class="product__description">
+                    These low-profile sneakers are your perfect casual wear companion. Featuring a durable rubber outer sole, they'll withstand everything the weather can offer.
+                </p>
+            </article>
+
+            <article class="product__form">
+                <header class="product__form__header">
+                    <section class="product__form__header--left">
+                        <span class="product__price">$125.00</span>
+                        <span class="product__discount">50%</span>
+                    </section>
+                    <section class="product__form__header--right">
+                        <span class="product__price__former">
+                            $250.00
+                        </span>
+                    </section>
+                </header>
+                <form action="/">
+                    <input type="number" min="1" max="8">
+                    <button>
+                        <img src="./assets/images/icon-cart.svg" alt="">
+                        Add to cart
+                    </button>
+                </form>
+            </article>
+        </section>
+    </main>
+    <script src="script.js"></script>
+</body>
+</html>

@@ -1,0 +1,11 @@
+#product {
+    @include flex-column-align;
+}
+
+.product__info {
+    display: flex;
+    flex-direction: column;
+
+    padding: 16px;
+    gap: 24px;
+}

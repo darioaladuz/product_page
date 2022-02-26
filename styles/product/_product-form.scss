@@ -1,0 +1,65 @@
+.product__form {
+    display: flex;
+    flex-direction: column;
+    gap: 16px;
+    &__header {
+        @include flex-row-align;
+        justify-content: space-between;
+        &--left {
+            display: flex;
+            gap: 12px;
+            align-items: center;
+            .product__price {
+                color: $black;
+                font-weight: 700;
+                font-size: 1.5rem;
+            }
+            .product__discount {
+                border-radius: 4px;
+                padding: 4px 8px;
+                background: $pale-orange;
+                color: $orange;
+                font-weight: 700;
+            }
+        }
+
+        &--right {
+            .product__price__former {
+                color: $grayish-blue;
+                text-decoration: line-through;
+            }
+        }
+    }
+
+    form {
+        @include flex-column-align;
+        gap: 12px;
+
+        & > * {
+            width: 100%;
+            padding: 10px;
+            border-radius: 8px;
+            border: none;
+        }
+        input[type="number"] {
+            text-align: center;
+            background: $light-grayish-blue;
+        }
+
+        button {
+            @include flex-row-align;
+            justify-content: center;
+            gap: 12px;
+            background: $orange;
+            color: white;
+            font-weight: 700;
+            font-size: 16px;
+            padding: 16px;
+            box-shadow: 0 8px 16px 12px $pale-orange;
+
+            img {
+                
+            }
+        }
+    }
+}

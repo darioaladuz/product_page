@@ -1,0 +1,41 @@
+<head>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+        #cart {
+            border: 1px solid black;
+            width: 360px;
+            margin: 0 auto;
+            border-radius: 12px;
+            height: 240px;
+            display: flex;
+            flex-direction: column;
+        }
+        #cart__title {
+            padding: 16px;
+            padding-bottom: 24px;
+            border-bottom: 1px solid gray;
+        }       
+        #cart__content {
+            position: relative;
+            border: 1px solid red;
+            flex: 1;
+        }
+        #cart__empty {
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            height: 100%;
+        }
+    </style>
+</head>
+<section id="cart">
+    <h3 id="cart__title">Cart</h3>
+
+    <section id="cart__content">
+        <p id="cart__empty">Your cart is empty.</p>
+    </section>
+</section>
